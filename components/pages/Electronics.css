@@ -1,0 +1,77 @@
+.electronics-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fbd8d7;
+}
+
+.product-image {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.discounted-price {
+    color: #e53935;
+    font-weight: bold;
+}
+
+.original-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ef7777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-to-cart:hover {
+    background-color: #030100;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #000305;
+    text-decoration: none;
+    text-decoration-color: #e64a19;
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

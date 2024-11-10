@@ -1,0 +1,84 @@
+/* MenFashion.css */
+
+.men-fashion-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #666;
+}
+
+.discounted-price {
+    color: #007BFF;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.add-to-cart {
+    background-color: #FF4500;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #E03D00;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

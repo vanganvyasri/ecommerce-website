@@ -1,0 +1,80 @@
+/* src/components/pages/HomeLiving.css */
+
+/* General Styling for Home and Living Page */
+.home-living-page {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-living-page h2 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Styling for the Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Styling for Each Product Card */
+.product-card {
+    background-color: #dd8383;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-price {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.discounted-price {
+    font-weight: bold;
+    color: #28a745; /* Green color for discounted price */
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart {
+    background-color: #f2cebb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #000000; /* Darker blue on hover */
+}

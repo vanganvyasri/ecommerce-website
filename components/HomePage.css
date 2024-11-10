@@ -1,0 +1,263 @@
+/* Reset body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+/* Add styling for the logo */
+.navbar .logo {
+    font-size: 2rem;           /* Adjust the size of the logo text */
+    font-weight: bold;         /* Make the text bold */
+    color: #333;               /* Set the text color */
+    text-decoration: none;     /* Remove underline from the link */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Add shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add a hover effect */
+.navbar .logo:hover {
+    color: #f48e71; /* Change color on hover */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    z-index: 1000;
+    height: 60px;
+    /* Remove the border-bottom property */
+}
+
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right .nav-link {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Navbar styling for right alignment and search bar */
+.nav-right {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.nav-right .login-button, .nav-right .cart-button {
+    margin-right: 8px;
+    padding: 5px 10px;
+}
+
+.search-bar {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #f7f4f6;
+    width: 250px;
+    margin-left: 20px;
+}
+
+/* Navbar Links Hover Effect */
+.nav-left a, .nav-right .nav-link {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover, .nav-right .nav-link:hover {
+    color: #f86840; /* Change to your preferred hover color */
+}
+
+.nav-left a::after, .nav-right .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #719ad6; /* Underline color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+
+.nav-left a:hover::after, .nav-right .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Full-Screen Background Image */
+.full-screen-image {
+    background-image: url('images/B2.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px; /* To account for the navbar height */
+}
+
+.full-screen-image-content {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight:1000;
+    text-align: center;
+    position: absolute;
+    top: 120px; /* Moves text down by 100px */
+    z-index: 2; /* Ensures text content appears over the background */
+    width: 100%; /* Ensures text is centered horizontally */
+    left: 0;
+    transform: translateX(0); /* Optional: ensures no unwanted shifts */
+}
+
+/* Category Section */
+.category-section {
+    padding-top: 20px;
+    background-color: #8349a7;
+}
+
+.category-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px; /* Optional: Set a max-width for better layout control */
+}
+
+/* Category Item */
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%; /* Four items per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px; /* Adds spacing between rows */
+    color: #fff;
+    text-decoration: none; /* Remove link styles */
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(150, 200, 228, 0.15);
+}
+
+.category-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0px;
+    margin-bottom: 8px;
+}
+
+.category-item h3, .category-item span {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .category-item {
+        width: 45%; /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .category-item {
+        width: 100%; /* Single item per row on very small screens */
+    }
+}
+
+/* HomePage.css */
+
+/* Product Item Styling */
+.product-item {
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.original-price {
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Products Grid */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+

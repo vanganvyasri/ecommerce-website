@@ -1,0 +1,107 @@
+/* Basic page styling */
+.women-fashion-page {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid layout for product items */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Image styling */
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+/* Product name and price */
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.discounted-price {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Button styling */
+.add-to-cart {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #50c2eb;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #3a9bc9;
+}
+
+/* Navigation links for orders */
+.navigation-links {
+    margin-top: 20px;
+}
+
+.place-order-link,
+.see-order-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.place-order-link:hover,
+.see-order-link:hover {
+    text-decoration: underline;
+}
+
+/* Back to Categories link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000000;
+    
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

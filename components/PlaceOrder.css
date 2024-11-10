@@ -1,0 +1,157 @@
+/* Basic container styles for the page */
+.place-order-page,
+.checkout-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Styling for the cart items container */
+.cart-items-container {
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-price {
+    font-size: 1rem;
+    color: #333;
+}
+
+.remove-item {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.remove-item:hover {
+    background-color: #8a271c; /* Darker red on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for the order summary and total price */
+.order-summary-container {
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(222, 154, 154, 0.2);
+}
+
+.order-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-summary h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.checkout-button:hover {
+    background-color: #084e98;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the checkout page payment option */
+.payment-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(232, 201, 201, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.payment-option h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.payment-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-button:hover {
+    background-color: #155623;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Empty cart message */
+.empty-cart {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.go-back-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.go-back-link:hover {
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: bold;
+}
